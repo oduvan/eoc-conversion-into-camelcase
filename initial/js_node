@@ -1,19 +1,17 @@
-"use strict";
-
-function toCamelCase(name) {
+export function toCamelCase(name: string): string {
     // your code here
     return name;
 }
 
-var assert = require('assert');
-if (!global.is_checking) {
-    console.log('Example:')
-    console.log(toCamelCase('name'))
+import * as assert from 'assert';
 
-    // These "asserts" are used for self-checking and not for an auto-testing
-    assert.equal(toCamelCase("my_function_name"), "MyFunctionName")
-    assert.equal(toCamelCase("i_phone"), "IPhone")
-    assert.equal(toCamelCase("this_function_is_empty"), "ThisFunctionIsEmpty")
-    assert.equal(toCamelCase("name"), "Name")
-    console.log("Coding complete? Click 'Check' to earn cool rewards!");
-}
+console.log('Example:')
+console.log(toCamelCase('name'))
+
+// These "asserts" are used for self-checking and not for an auto-testing
+assert.equal(toCamelCase("my_function_name"), "MyFunctionName")
+assert.equal(toCamelCase("i_phone"), "IPhone")
+assert.equal(toCamelCase("this_function_is_empty"), "ThisFunctionIsEmpty")
+assert.equal(toCamelCase("name"), "Name")
+console.log("Coding complete? Click 'Check' to earn cool rewards!");
+
